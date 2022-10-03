@@ -7,11 +7,13 @@ import DefaultAccordion from './accordion/defaultAccordion';
 import Paragraph from './Paragraph';
 import ParagraphData from './paragraphData';
 import AccordionBordered from './accordion/accordionBordered';
+import AccordionWithoutSpace from './accordion/accordionWithoutSpace';
+import AccordionWithoutSpaceWithBorder from './accordion/accordionWithoutSpaceWithBorder';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AccordionBordered />
+    <AccordionWithoutSpaceWithBorder />
   </React.StrictMode>
 );
 
