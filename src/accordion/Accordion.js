@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 
-const Accordion = ({ title, content, headClassOn, headClassOff }) => {
+const Accordion = ({ title, content, headClassOn, headClassOff, border }) => {
   const [isActive, setIsActive] = useState(false);
 
+  const mt = 'mt-4';
+
   return (
-    <div className="accordion-item" class="mt-4">
+    <div className="accordion-item" class={mt + ' ' + border }>
       <div
         className="accordion-title"
         onClick={() => setIsActive(!isActive)}

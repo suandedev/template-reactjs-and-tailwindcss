@@ -11,7 +11,7 @@ import AccordionBordered from './accordion/accordionBordered';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <DefaultAccordion />
+    <AccordionBordered />
   </React.StrictMode>
 );
 
