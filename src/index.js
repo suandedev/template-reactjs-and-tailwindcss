@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import DefaultAccordion from './accordion/defaultAccordion';
+import Paragraph from './Paragraph';
+import ParagraphData from './paragraphData';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
