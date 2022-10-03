@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import DefaultAccordion from './accordion/defaultAccordion';
 import Paragraph from './Paragraph';
 import ParagraphData from './paragraphData';
+import AccordionBordered from './accordion/accordionBordered';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
