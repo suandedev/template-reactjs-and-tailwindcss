@@ -11,11 +11,12 @@ import AccordionWithoutSpace from "./accordion/accordionWithoutSpace";
 import AccordionWithoutSpaceWithBorder from "./accordion/accordionWithoutSpaceWithBorder";
 import AccordionWithIcon from "./accordion/accordionWithIcon";
 import AccordionHeaderBackgound from "./accordion/accordionHeaderBackgound";
+import AccordionSolidBackground from "./accordion/accordionSolidBackground";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <AccordionHeaderBackgound />
+    <AccordionSolidBackground />
   </React.StrictMode>
 );
 

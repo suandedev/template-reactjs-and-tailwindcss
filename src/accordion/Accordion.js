@@ -10,7 +10,8 @@ const Accordion = ({
   headClassOff,
   border,
   space,
-  icon
+  icon,
+  contentClass
 }) => {
   const [isActive, setIsActive] = useState(false);
 
@@ -35,7 +36,7 @@ const Accordion = ({
           <div class="text-xl">{isActive ? "-" : "+"}</div>
         </div>
         {isActive && (
-          <div className="accordion-content" class="m-4 text-gray-500 text-sm">
+          <div className="accordion-content" class={contentClass}>
             {content}
           </div>
         )}
@@ -43,7 +44,7 @@ const Accordion = ({
     );
   } else {
     return (
-      <div className="accordion-item" class={space + " " + border}>
+      <div className="accordion-item" class={space + " " + border + " " + contentClass}>
         <div
           className="accordion-title"
           onClick={() => setIsActive(!isActive)}
@@ -60,7 +61,7 @@ const Accordion = ({
           <div class="text-xl">{isActive ? "-" : "+"}</div>
         </div>
         {isActive && (
-          <div className="accordion-content" class="m-4 text-gray-500 text-sm">
+          <div className="accordion-content" class={contentClass}>
             {content}
           </div>
         )}
