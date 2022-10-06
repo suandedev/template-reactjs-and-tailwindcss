@@ -1,11 +1,12 @@
+import React from "react";
 import Accordion from "./Accordion";
 
-const AccordionWithoutSpaceWithBorder = () => {
+const AccordionWithIcon = () => {
   const headClassOn =
-    "bg-sky-500 flex flex-row justify-between rounded-t-lg px-6 py-4 text-sky-100";
+    "bg-sky-500 flex flex-row justify-between rounded-lg px-6 py-4 text-sky-100";
   const headClassOff =
     "bg-sky-100 flex flex-row justify-between rounded-lg px-6 py-4 text-sky-500";
-  const border = "border border-2 border-sky-500 rounded-xl";
+  const space = "mt-4";
 
   const datas = [
     {
@@ -13,36 +14,38 @@ const AccordionWithoutSpaceWithBorder = () => {
       content: "this is the description of accordion",
       headClassOn: headClassOn,
       headClassOff: headClassOff,
-      border: border,
+      space: space,
     },
     {
       title: "Accordion Header",
       content: "this is the description of accordion",
       headClassOn: headClassOn,
       headClassOff: headClassOff,
-      border: border,
+      space: space,
     },
     {
       title: "Accordion Header",
       content: "this is the description of accordion",
       headClassOn: headClassOn,
       headClassOff: headClassOff,
-      border: border,
+      space: space,
     },
   ];
 
   return (
     <div class="m-4 p-4 rounded-lg shadow-lg">
-      <h1 class="capitalize text-xl font-semibold">Accordion Without Space Border</h1>
-      <p class="text-gray-500 ">This is accordion without space border. folder is accordion/accordionWithouthSpaceBorder.js</p>
+      <h1 class="capitalize text-xl font-semibold"> Accordion with icon</h1>
+      <p class="text-gray-500 ">
+        This is accordion. folder is accordion/AccordionWithIcon.js
+      </p>
       <div className="accordion" class="mt-4">
         {datas.map((data) => (
           <Accordion
             title={data.title}
             content={data.content}
-            headClassOn={headClassOn}
-            headClassOff={headClassOff}
-            border={data.border}
+            headClassOn={data.headClassOn}
+            headClassOff={data.headClassOff}
+            space={data.space}
           />
         ))}
       </div>
@@ -50,4 +53,4 @@ const AccordionWithoutSpaceWithBorder = () => {
   );
 };
 
-export default AccordionWithoutSpaceWithBorder;
+export default AccordionWithIcon;

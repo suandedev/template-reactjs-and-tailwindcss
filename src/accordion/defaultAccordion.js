@@ -35,7 +35,7 @@ const DefaultAccordion = () => {
   return (
     <div class="m-4 p-4 rounded-lg shadow-lg">
       <h1 class="capitalize text-xl font-semibold">Default Accordion</h1>
-      <p class="text-gray-500 ">This is default accordion</p>
+      <p class="text-gray-500 ">This is default accordion. folder is accordion/defaultAccordion.js</p>
       <div className="accordion" class="mt-4">
         {datas.map((data) => (
           <Accordion

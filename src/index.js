@@ -1,19 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import DefaultAccordion from './accordion/defaultAccordion';
-import Paragraph from './Paragraph';
-import ParagraphData from './paragraphData';
-import AccordionBordered from './accordion/accordionBordered';
-import AccordionWithoutSpace from './accordion/accordionWithoutSpace';
-import AccordionWithoutSpaceWithBorder from './accordion/accordionWithoutSpaceWithBorder';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import DefaultAccordion from "./accordion/defaultAccordion";
+import Paragraph from "./Paragraph";
+import ParagraphData from "./paragraphData";
+import AccordionBordered from "./accordion/accordionBordered";
+import AccordionWithoutSpace from "./accordion/accordionWithoutSpace";
+import AccordionWithoutSpaceWithBorder from "./accordion/accordionWithoutSpaceWithBorder";
+import AccordionWithIcon from "./accordion/accordionWithIcon";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <AccordionWithoutSpaceWithBorder />
+    <AccordionWithIcon />
   </React.StrictMode>
 );
 

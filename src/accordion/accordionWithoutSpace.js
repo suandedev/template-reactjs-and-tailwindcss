@@ -34,7 +34,7 @@ const AccordionWithoutSpace = () => {
   return (
     <div class="m-4 p-4 rounded-lg shadow-lg">
       <h1 class="capitalize text-xl font-semibold">Accordion Without Space</h1>
-      <p class="text-gray-500 ">This is accordion without space</p>
+      <p class="text-gray-500 ">This is accordion without space. folder is accordion/accordionWithOutSpace.js</p>
       <div className="accordion" class="mt-4">
         {datas.map((data) => (
           <Accordion
