@@ -10,34 +10,64 @@ const Accordion = ({
   headClassOff,
   border,
   space,
+  icon
 }) => {
   const [isActive, setIsActive] = useState(false);
 
   const mt = "mt-4";
 
-  return (
-    <div className="accordion-item" class={space + " " + border}>
-      <div
-        className="accordion-title"
-        onClick={() => setIsActive(!isActive)}
-        class={isActive ? headClassOn : headClassOff}
-      >
-        {/* icons */}
-        <div class="flex flex-row items-center">
-          <div class="mr-2">
-            <FaAccessibleIcon/>
+  if(icon) {
+    return (
+      <div className="accordion-item" class={space + " " + border}>
+        <div
+          className="accordion-title"
+          onClick={() => setIsActive(!isActive)}
+          class={isActive ? headClassOn : headClassOff}
+        >
+          {/* icons */}
+          <div class="flex flex-row items-center">
+            <div class="mr-2">
+              <FaAccessibleIcon/>
+            </div>
+            <div>{title}</div>
           </div>
-          <div>{title}</div>
+          {/* <h1>{title}</h1> */}
+          <div class="text-xl">{isActive ? "-" : "+"}</div>
         </div>
-        {/* <h1>{title}</h1> */}
-        <div class="text-xl">{isActive ? "-" : "+"}</div>
+        {isActive && (
+          <div className="accordion-content" class="m-4 text-gray-500 text-sm">
+            {content}
+          </div>
+        )}
       </div>
-      {isActive && (
-        <div className="accordion-content" class="m-4 text-gray-500 text-sm">
-          {content}
+    );
+  } else {
+    return (
+      <div className="accordion-item" class={space + " " + border}>
+        <div
+          className="accordion-title"
+          onClick={() => setIsActive(!isActive)}
+          class={isActive ? headClassOn : headClassOff}
+        >
+          {/* icons */}
+          <div class="flex flex-row items-center">
+            <div class="mr-2">
+              <div></div>
+            </div>
+            <div>{title}</div>
+          </div>
+          {/* <h1>{title}</h1> */}
+          <div class="text-xl">{isActive ? "-" : "+"}</div>
         </div>
-      )}
-    </div>
-  );
+        {isActive && (
+          <div className="accordion-content" class="m-4 text-gray-500 text-sm">
+            {content}
+          </div>
+        )}
+      </div>
+    );
+  }
+
+  
 };
 export default Accordion;

@@ -10,6 +10,7 @@ import AccordionBordered from "./accordion/accordionBordered";
 import AccordionWithoutSpace from "./accordion/accordionWithoutSpace";
 import AccordionWithoutSpaceWithBorder from "./accordion/accordionWithoutSpaceWithBorder";
 import AccordionWithIcon from "./accordion/accordionWithIcon";
+import AccordionHeaderBackgound from "./accordion/accordionHeaderBackgound";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
