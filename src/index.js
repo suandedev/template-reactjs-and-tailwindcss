@@ -15,7 +15,7 @@ import AccordionHeaderBackgound from "./accordion/accordionHeaderBackgound";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <AccordionWithIcon />
+    <AccordionHeaderBackgound />
   </React.StrictMode>
 );
 

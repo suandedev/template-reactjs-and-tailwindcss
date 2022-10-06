@@ -3,9 +3,9 @@ import Accordion from "./Accordion";
 
 const AccordionHeaderBackgound = () => {
   const headClassOn =
-    "bg-sky-500 flex flex-row justify-between rounded-lg px-6 py-4 text-sky-100";
+    "bg-sky-50 flex flex-row justify-between rounded-lg px-6 py-4 text-gray-500";
   const headClassOff =
-    "bg-sky-100 flex flex-row justify-between rounded-lg px-6 py-4 text-sky-500";
+    "bg-sky-50 flex flex-row justify-between rounded-lg px-6 py-4 text-gray-500";
   const space = "mt-4";
 
   const datas = [
