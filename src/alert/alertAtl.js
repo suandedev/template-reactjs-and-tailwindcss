@@ -62,6 +62,7 @@ const AlertAlt = () => {
 
   return (
     <div className="alert">
+      <h1 className="text-xl capitalize m-5">alert alt</h1>
       {datas.map((data) => (
         <Alert
           icon={data.icon}

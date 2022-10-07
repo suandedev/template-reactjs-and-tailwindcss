@@ -56,6 +56,7 @@ const SolidColorAlert = () => {
 
   return (
     <div className="alert">
+      <h1 className="text-xl capitalize m-5">colid color alert </h1>
       {datas.map((data) => (
         <Alert
           icon={data.icon}

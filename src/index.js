@@ -16,11 +16,16 @@ import AccordionActiveBackgound from "./accordion/accordionActiveBackground";
 import Alert from "./alert/Alert";
 import BasicAlert from "./alert/BasicAlert";
 import SolidAlt from "./alert/solidAlt";
+import DismissableWithSolid from "./alert/dismissableWithSolid";
+import AlertWithLink from "./alert/alertWithLink";
+import AlertWithLinkANdSolidColor from "./alert/alertWithLinkAndSolidColor";
+import AlertOutline from "./alert/alertOutline";
+import AlertSocial from "./alert/alertSocial";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <SolidAlt />
+    <BasicAlert />
   </React.StrictMode>
 );
 

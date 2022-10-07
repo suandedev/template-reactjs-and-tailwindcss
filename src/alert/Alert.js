@@ -6,8 +6,9 @@ import IconLike from "../icon/like";
 import IconInfo from "../icon/info";
 import IconSuccess from "../icon/success";
 import IconWarning from "../icon/warning";
+import { FacebookOutlined } from "@mui/icons-material";
 
-const Alert = ({ icon, iconStatus, message, bg, color, rounded, border }) => {
+const Alert = ({ icon, iconStatus, message, bg, color, rounded, border, link, linkStyle }) => {
   const [isActive, setIsActive] = useState(true);
 
   const icons = () => {
@@ -31,7 +32,7 @@ const Alert = ({ icon, iconStatus, message, bg, color, rounded, border }) => {
       {isActive && (
         <div
           class={
-            "flex flex-row justify-between m-4 p-4 " +
+            "flex flex-row justify-between items-center m-4 p-4 " +
             bg +
             " " +
             color +
@@ -39,9 +40,10 @@ const Alert = ({ icon, iconStatus, message, bg, color, rounded, border }) => {
             rounded + " " + border
           }
         >
-          <div class="flex flex-row space-x-2">
+          <div class="flex flex-row items-center space-x-2">
             <div className="icon">{iconStatus ? icons() : ""}</div>
             <h1 className="message">{message}</h1>
+            <a href="#" class={linkStyle}>{link}</a>
           </div>
           <button class="text-gray-500" onClick={() => setIsActive(!isActive)}>
             <IconClear />

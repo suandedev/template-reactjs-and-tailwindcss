@@ -55,6 +55,7 @@ const RoundedAlert = () => {
 
   return (
     <div className="alert">
+      <h1 className="text-xl capitalize m-5">rounded alert </h1>
       {datas.map((data) => (
         <Alert
           icon={data.icon}
