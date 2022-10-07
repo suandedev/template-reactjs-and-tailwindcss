@@ -7,7 +7,7 @@ import IconInfo from "../icon/info";
 import IconSuccess from "../icon/success";
 import IconWarning from "../icon/warning";
 
-const Alert = ({ icon, message, bg, color, rounded }) => {
+const Alert = ({ icon, iconStatus, message, bg, color, rounded, border }) => {
   const [isActive, setIsActive] = useState(true);
 
   const icons = () => {
@@ -17,26 +17,31 @@ const Alert = ({ icon, message, bg, color, rounded }) => {
       return <IconError />;
     } else if (icon == "info") {
       return <IconInfo />;
-    } else if(icon == "success") {
-        return <IconSuccess/>
+    } else if (icon == "success") {
+      return <IconSuccess />;
     } else if (icon == "smile") {
-        return <IconSmile/>
+      return <IconSmile />;
     } else if (icon == "warning") {
-        return <IconWarning/>
+      return <IconWarning />;
     }
   };
 
   return (
     <>
       {isActive && (
-        <div class={"flex flex-row justify-between m-4 p-4 " + bg + " " + color + " rounded-" + rounded}>
+        <div
+          class={
+            "flex flex-row justify-between m-4 p-4 " +
+            bg +
+            " " +
+            color +
+            " rounded-" +
+            rounded + " " + border
+          }
+        >
           <div class="flex flex-row space-x-2">
-            <div className="icon">
-              {icons()}
-            </div>
-            <h1 className="message">
-              {message}
-            </h1>
+            <div className="icon">{iconStatus ? icons() : ""}</div>
+            <h1 className="message">{message}</h1>
           </div>
           <button class="text-gray-500" onClick={() => setIsActive(!isActive)}>
             <IconClear />

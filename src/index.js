@@ -15,12 +15,11 @@ import AccordionSolidBackground from "./accordion/accordionSolidBackground";
 import AccordionActiveBackgound from "./accordion/accordionActiveBackground";
 import Alert from "./alert/Alert";
 import BasicAlert from "./alert/BasicAlert";
-import SolidColorAlert from "./alert/solidColorAlert";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <SolidColorAlert />
+    <BasicAlert />
   </React.StrictMode>
 );
 
