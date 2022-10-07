@@ -13,11 +13,13 @@ import AccordionWithIcon from "./accordion/accordionWithIcon";
 import AccordionHeaderBackgound from "./accordion/accordionHeaderBackgound";
 import AccordionSolidBackground from "./accordion/accordionSolidBackground";
 import AccordionActiveBackgound from "./accordion/accordionActiveBackground";
+import Alert from "./alert/Alert";
+import BasicAlert from "./alert/BasicAlert";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <AccordionActiveBackgound />
+    <BasicAlert />
   </React.StrictMode>
 );
 
