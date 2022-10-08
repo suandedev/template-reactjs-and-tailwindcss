@@ -21,11 +21,12 @@ import AlertWithLink from "./alert/alertWithLink";
 import AlertWithLinkANdSolidColor from "./alert/alertWithLinkAndSolidColor";
 import AlertOutline from "./alert/alertOutline";
 import AlertSocial from "./alert/alertSocial";
+import BadgesSize from "./badge/bagesSize";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BasicAlert />
+    <BadgesSize />
   </React.StrictMode>
 );
 
