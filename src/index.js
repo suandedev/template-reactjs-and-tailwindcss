@@ -22,11 +22,16 @@ import AlertWithLinkANdSolidColor from "./alert/alertWithLinkAndSolidColor";
 import AlertOutline from "./alert/alertOutline";
 import AlertSocial from "./alert/alertSocial";
 import BadgesSize from "./badge/bagesSize";
+import BootstrapBadges from "./badge/bootstrapBadges";
+import LinkBadge from "./badge/linkBadge";
+import RoundedOutlineBadge from "./badge/roundedOutlineBadge";
+import OutlineCircle from "./badge/outlineCircle";
+import CircleBagde from "./badge/CircleBagde";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BadgesSize />
+    <CircleBagde />
   </React.StrictMode>
 );
 
