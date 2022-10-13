@@ -11,11 +11,12 @@ import SquareButton from "./button/SquareButton";
 import SquareOutlineButton from "./button/SquareOutlineButton";
 import ButtonRightIcon from "./button/ButtonRightIcon";
 import ButtonLeftIcon from "./button/ButtonLeftIcon";
+import Modal from "./modal/Modal";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <ButtonLeftIcon />
+    <Modal />
   </React.StrictMode>
 );
 
