@@ -1,13 +1,11 @@
+import React from 'react';
+import * as FontAwesome from 'react-icons/fa';
 
-import * as icons from "react-icons/all";
-import ComponentWithIcon from "../icon/ComponentWithIcon";
-
-
-const MyButton = ({cover, text, buttonStyle}) => {
+const MyButton = ({cover, text, buttonStyle, iconStyle,icon}) => {
     return(
-        <div className={cover}>
+        <div className={iconStyle + cover }>
             <button className={buttonStyle}>{text}</button> 
-            {/* <ComponentWithIcon comboName={FaBeer}/> */}
+            <div className=''>{ (icon) ? React.createElement(FontAwesome[icon]) : ''}</div>
         </div>
     );
 };

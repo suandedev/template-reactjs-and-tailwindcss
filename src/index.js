@@ -10,11 +10,12 @@ import OutlineButtonSize from "./button/OutlineButtonSize";
 import SquareButton from "./button/SquareButton";
 import SquareOutlineButton from "./button/SquareOutlineButton";
 import ButtonRightIcon from "./button/ButtonRightIcon";
+import ButtonLeftIcon from "./button/ButtonLeftIcon";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <ButtonRightIcon />
+    <ButtonLeftIcon />
   </React.StrictMode>
 );
 
