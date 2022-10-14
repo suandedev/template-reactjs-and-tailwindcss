@@ -12,11 +12,31 @@ import SquareOutlineButton from "./button/SquareOutlineButton";
 import ButtonRightIcon from "./button/ButtonRightIcon";
 import ButtonLeftIcon from "./button/ButtonLeftIcon";
 import Modal from "./modal/Modal";
+import ButtonGroup from "./buttonGroup/ButtonGrup";
+import ListGroup from "./listGroup/ListGroup";
+import BasicListGroup from "./listGroup/BasicListGroup";
+import MediaObject from "./mediaObject/MediaObject";
+import BasicMediaObject from "./mediaObject/BasicMediaObject";
+import AlignTopMediaObject from "./mediaObject/AlignTopMediaObject";
+import AlignCenterMediaObject from "./mediaObject/AlignCenterMediaObject";
+import AlignBottomMediaObject from "./mediaObject/AlignBottomMediaObject";
+import MyCard from "./card/Card";
+import BasicCard from "./card/BasicCard";
+import BasicCardWithBorder from "./card/BasicCardWithBorder";
+import BasicCardWithLink from "./card/BasicCardWithLink";
+import CardWithImg from "./card/CardWithImg";
+import MyDropdown from "./dropdown/MyDropdown";
+import DropdownDivider from "./dropdown/DropdownDivider";
+import ProgresBar from "./progresBar/ProgressBar";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Modal />
+    <ProgresBar bgcolor="orange" progress="30" height={30} />
+    <ProgresBar bgcolor="red" progress="60" height={30} />
+    <ProgresBar bgcolor="#99ff66" progress="50" height={30} />
+    <ProgresBar bgcolor="#ff00ff" progress="85" height={30} />
+    <ProgresBar bgcolor="#99ccff" progress="95" height={30} />
   </React.StrictMode>
 );
 
